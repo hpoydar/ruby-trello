@@ -2,7 +2,7 @@ module Trello
   # A Card is a container that can house checklists and comments; it resides inside a List.
   class Card < BasicData
     attr_reader   :id
-    attr_accessor :name, :description, :closed, :url, :board_id, :member_ids, :list_id
+    attr_accessor :name, :description, :labels, :closed, :url, :board_id, :member_ids, :list_id
 
     class << self
       # Find a specific card by its id.
@@ -30,6 +30,7 @@ module Trello
       @url         = fields['url']
       @board_id    = fields['idBoard']
       @member_ids  = fields['idMembers']
+      @labels      = fields['labels']
       @list_id     = fields['idList']
       self
     end

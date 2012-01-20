@@ -87,6 +87,7 @@ module Helpers
       "id"        => "abcdef123456789123456789",
       "name"      => "Do something awesome",
       "desc"      => "Awesome things are awesome.",
+      "labels"    => ["alpha", "bravo"],
       "closed"    => false,
       "idList"    => "abcdef123456789123456789",
       "idBoard"   => "abcdef123456789123456789",

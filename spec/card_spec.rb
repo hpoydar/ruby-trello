@@ -63,6 +63,10 @@ module Trello
         @card.description.should_not be_nil
       end
 
+      it "gets its labels" do
+        @card.labels.should be_a_kind_of(Array)
+      end
+
       it "knows if it is open or closed" do
         @card.closed.should_not be_nil
       end
